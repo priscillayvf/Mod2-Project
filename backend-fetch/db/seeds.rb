@@ -81,8 +81,77 @@ user1.pets.create([
         breed: 'Bombay',
         gender: 'Female',
         age: 5
+    },
+    {
+        name: 'Spot',
+        species: 'Dog',
+        breed: 'Akita',
+        gender: 'Male',
+        age: 4
+    },
+    {
+        name: 'Tiffany',
+        species: 'Dog',
+        breed: 'Brittany Spaniel',
+        gender: 'Female',
+        age: 4
+    },
+    {
+        name: 'Tifa',
+        species: 'Dog',
+        breed: 'Rottweiler Mix',
+        gender: 'Female',
+        age: 6
+    },
+    {
+        name: 'Pete',
+        species: 'Dog',
+        breed: 'Doberman Pinscher',
+        gender: 'Male',
+        age: 2
+    },
+    {
+        name: 'Wyatt',
+        species: 'Dog',
+        breed: 'Brittany Spaniel',
+        gender: 'female',
+        age: 5
+    },
+    {
+        name: 'Mocha',
+        species: 'Dog',
+        breed: 'Doberman Pinscher',
+        gender: 'Male',
+        age: 3
+    },
+    {
+        name: 'Aspen',
+        species: 'Dog',
+        breed: 'Shepherd Mix',
+        gender: 'Male',
+        age: 5
+    },
+    {
+        name: 'Eleanor',
+        species: 'Dog',
+        breed: 'American Bulldog',
+        gender: 'Female',
+        age: 2
+    },
+    {
+        name: 'Bud',
+        species: 'Dog',
+        breed: 'Anatolian Shepherd',
+        gender: 'Male',
+        age: 7
+    },
+    {
+        name: 'Rigby',
+        species: 'Dog',
+        breed: 'Pit Bull Terrier Mix',
+        gender: 'Female',
+        age: 4
     }
-
 ])
 
 
