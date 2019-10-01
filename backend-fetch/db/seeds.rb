@@ -5,19 +5,160 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'rest-client'
-require 'json'
+User.destroy_all
+Pet.destroy_all
+
+user1 = User.create(name: "User1")
+
+
+user1.pets.create([
+    {
+        name: 'Varric',
+        species: 'Cat',
+        breed: 'Domestic Short Hair',
+        gender: 'Male',
+        age: 1
+    },
+    {
+        name: 'Luther',
+        species: 'Cat',
+        breed: 'Tabby',
+        gender: 'Male',
+        age: 3
+    },
+    {
+        name: 'Mr. Kitty',
+        species: 'Cat',
+        breed: 'Russian Blue',
+        gender: 'Male',
+        age: 8
+    },
+    {
+        name: 'Palmer',
+        species: 'Cat',
+        breed: 'Tiger',
+        gender: 'Male',
+        age: 1
+    },
+    {
+        name: 'Armani',
+        species: 'Cat',
+        breed: 'Bombay',
+        gender: 'Male',
+        age: 5
+    },
+    {
+        name: 'Daisy',
+        species: 'Cat',
+        breed: 'Domestic Short Hair',
+        gender: 'Female',
+        age: 6
+    },
+    {
+        name: 'Autumn',
+        species: 'Cat',
+        breed: 'Russian Blue',
+        gender: 'Female',
+        age: 4
+    },
+    {
+        name: 'Chica',
+        species: 'Cat',
+        breed: 'Calico',
+        gender: 'Female',
+        age: 2
+    },
+    {
+        name: 'Stormy',
+        species: 'Cat',
+        breed: 'Persian',
+        gender: 'Female',
+        age: 10
+    },
+    {
+        name: 'Chanel',
+        species: 'Cat',
+        breed: 'Bombay',
+        gender: 'Female',
+        age: 5
+    }
+
+])
 
 
 
 
 
 
+# varric = Pet.create(
+#     name: 'Varric',
+#     species: 'Cat',
+#     breed: 'Domestic Short Hair',
+#     gender: 'Male',
+#     age: 1,
+#     user: user1
+# )
+# luther = Pet.create(
+#     name: 'Luther',
+#     species: 'Cat',
+#     breed: 'Tabby',
+#     gender: 'Male',
+#     age: 3
+# )
 
-
-api_endpoint = 'https://api.petfinder.com/v2/oauth2/token'
-request_headers = { headers: { 'user-key' => 'fY8CaH6eolnujPQ5BjHmsNqQDmqCqichEt0z8FmRcuOqF4jywT' } }
-
-
-
-api = Apicalypse.new(api_endpoint, request_headers)
+# mrkitty = Pet.create(
+#     name: 'Mr. Kitty',
+#     species: 'Cat',
+#     breed: 'Russian Blue',
+#     gender: 'Male',
+#     age: 8
+# )
+# palmer = Pet.create(
+#     name: 'Palmer',
+#     species: 'Cat',
+#     breed: 'Tiger',
+#     gender: 'Male',
+#     age: 1
+# )
+# daisy = Pet.create(
+#     name: 'Daisy',
+#     species: 'Cat',
+#     breed: 'Domestic Short Hair',
+#     gender: 'Female',
+#     age: 6
+# )
+# autumn = Pet.create(
+#     name: 'Autumn',
+#     species: 'Cat',
+#     breed: 'Russian Blue',
+#     gender: 'Female',
+#     age: 4
+# )
+# chica = Pet.create(
+#     name: 'Chica',
+#     species: 'Cat',
+#     breed: 'Calico',
+#     gender: 'Female',
+#     age: 2
+# )
+# stormy = Pet.create(
+#     name: 'Stormy',
+#     species: 'Cat',
+#     breed: 'Persian',
+#     gender: 'Female',
+#     age: 10
+# )
+# armani = Pet.create(
+#     name: 'Armani',
+#     species: 'Cat',
+#     breed: 'Bombay',
+#     gender: 'Male',
+#     age: 5
+# )
+# chanel = Pet.create(
+#     name: 'Chanel',
+#     species: 'Cat',
+#     breed: 'Bombay',
+#     gender: 'Female',
+#     age: 5
+# )
