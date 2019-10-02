@@ -17,140 +17,160 @@ user1.pets.create([
         species: 'Cat',
         breed: 'Domestic Short Hair',
         gender: 'Male',
-        age: 1
+        age: 1,
+        image: 
     },
     {
         name: 'Luther',
         species: 'Cat',
         breed: 'Tabby',
         gender: 'Male',
-        age: 3
+        age: 3,
+        image:
     },
     {
         name: 'Mr. Kitty',
         species: 'Cat',
         breed: 'Russian Blue',
         gender: 'Male',
-        age: 8
+        age: 8,
+        image:
     },
     {
         name: 'Palmer',
         species: 'Cat',
         breed: 'Tiger',
         gender: 'Male',
-        age: 1
+        age: 1,
+        image:
     },
     {
         name: 'Armani',
         species: 'Cat',
         breed: 'Bombay',
         gender: 'Male',
-        age: 5
+        age: 5,
+        image:
     },
     {
         name: 'Daisy',
         species: 'Cat',
         breed: 'Domestic Short Hair',
         gender: 'Female',
-        age: 6
+        age: 6,
+        image:
     },
     {
         name: 'Autumn',
         species: 'Cat',
         breed: 'Russian Blue',
         gender: 'Female',
-        age: 4
+        age: 4,
+        image:
     },
     {
         name: 'Chica',
         species: 'Cat',
         breed: 'Calico',
         gender: 'Female',
-        age: 2
+        age: 2,
+        image:
     },
     {
         name: 'Stormy',
         species: 'Cat',
         breed: 'Persian',
         gender: 'Female',
-        age: 10
+        age: 10,
+        image:
     },
     {
         name: 'Chanel',
         species: 'Cat',
         breed: 'Bombay',
         gender: 'Female',
-        age: 5
+        age: 5,
+        image:
     },
     {
         name: 'Spot',
         species: 'Dog',
         breed: 'Akita',
         gender: 'Male',
-        age: 4
+        age: 4,
+        image:
     },
     {
         name: 'Tiffany',
         species: 'Dog',
-        breed: 'Brittany Spaniel',
+        breed: 'Spaniel',
         gender: 'Female',
-        age: 4
+        age: 4,
+        image:
     },
     {
         name: 'Tifa',
         species: 'Dog',
         breed: 'Rottweiler Mix',
         gender: 'Female',
-        age: 6
+        age: 6,
+        image:
     },
     {
         name: 'Pete',
         species: 'Dog',
         breed: 'Doberman Pinscher',
         gender: 'Male',
-        age: 2
+        age: 2,
+        image:
     },
     {
         name: 'Wyatt',
         species: 'Dog',
-        breed: 'Brittany Spaniel',
+        breed: 'Spaniel',
         gender: 'female',
-        age: 5
+        age: 5,
+        image:
     },
     {
         name: 'Mocha',
         species: 'Dog',
         breed: 'Doberman Pinscher',
         gender: 'Male',
-        age: 3
+        age: 3,
+        image:
     },
     {
         name: 'Aspen',
         species: 'Dog',
         breed: 'Shepherd Mix',
         gender: 'Male',
-        age: 5
+        age: 5,
+        image:
     },
     {
         name: 'Eleanor',
         species: 'Dog',
         breed: 'American Bulldog',
         gender: 'Female',
-        age: 2
+        age: 2,
+        image:
     },
     {
         name: 'Bud',
         species: 'Dog',
-        breed: 'Anatolian Shepherd',
+        breed: 'Shepherd',
         gender: 'Male',
-        age: 7
+        age: 7,
+        image:
     },
     {
         name: 'Rigby',
         species: 'Dog',
         breed: 'Pit Bull Terrier Mix',
         gender: 'Female',
-        age: 4
+        age: 4,
+        image:
     }
 ])
 
