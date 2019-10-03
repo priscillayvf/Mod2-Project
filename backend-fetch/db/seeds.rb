@@ -27,6 +27,7 @@ user1.pets.create([
         gender: 'Male',
         age: 3,
         image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/35733473/2/?bust=1469123711&width=720"
+
     },
     {
         name: 'Mr. Kitty',
@@ -103,7 +104,7 @@ user1.pets.create([
     {
         name: 'Tiffany',
         species: 'Dog',
-        breed: 'Brittany Spaniel',
+        breed: 'Spaniel',
         gender: 'Female',
         age: 4,
         image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46091990/3/?bust=1569449929&width=720"
@@ -127,7 +128,7 @@ user1.pets.create([
     {
         name: 'Wyatt',
         species: 'Dog',
-        breed: 'Brittany Spaniel',
+        breed: 'Spaniel',
         gender: 'female',
         age: 5,
         image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45182692/2/?bust=1569452628&width=720"
@@ -159,7 +160,7 @@ user1.pets.create([
     {
         name: 'Bud',
         species: 'Dog',
-        breed: 'Anatolian Shepherd',
+        breed: 'Shepherd',
         gender: 'Male',
         age: 7,
         image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45690687/2/?bust=1566348185&width=720"
