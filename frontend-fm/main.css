@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* 
 .flipCard {
     background-color: transparent;
     width: 400px;
@@ -28,7 +28,7 @@ body {
   }
   
   /* This container is needed to position the front and back side */
-  .flipCardInner {
+  /* .flipCardInner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -36,29 +36,29 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
+   */
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flipCard:hover .flipCardInner {
+  /* .flipCard:hover .flipCardInner {
     transform: rotateY(180deg);
-  }
+  } */
   
   /* Position the front and back side */
-  .flipCardFront, .flipCardBack {
+  /* .flipCardFront, .flipCardBack {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
+  } */
   
   /* Style the front side (fallback if image is missing) */
-  .flipCardFront {
+  /* .flipCardFront {
     background-color: #bbb;
     color: black;
-  }
+  } */
   
   /* Style the back side */
-  .flipCardBack {
+  /* .flipCardBack {
     background-color: white;
     color: black;
     transform: rotateY(180deg);
-  }
+  } */

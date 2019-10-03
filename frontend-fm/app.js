@@ -18,63 +18,74 @@ const body = document.body
 //         })
 //     })
 
-// function createCard(pets) {
-//     pets.forEach(pet => {
-//         let div = document.createElement('div')
-//         let name = document.createElement('h1')
-//         let breed = document.createElement('p')
-//         let gender = document.createElement('p')
-//         let age = document.createElement('p')
+function createCard(pets) {
+    let flipCard = document.querySelector('#flipCard')
+    pets.forEach(pet => {
+    
 
-//         name.innerText = pet.name
-//         breed.innerText = pet.breed
-//         gender.innerText = pet.gender
-//         age.innerText = pet.age
+        let cardContainer = document.createElement('div')
+        let flipCardBack = document.createElement('div')
+        flipCardBack.className = "flipCardBack"
+        let flipCardFront = document.createElement('div')
+        flipCardFront.className = 'flipCardFront'
         
-
-//     div.append(name, breed, gender, age)
-//     body.appendChild(div)
-//     })
-// }
+        let name = document.createElement('h1')
+        let breed = document.createElement('p')
+        let gender = document.createElement('p')
+        let age = document.createElement('p')
+        let image = document.createElement('img')
+        
+        name.innerText = pet.name
+        breed.innerText = pet.breed
+        gender.innerText = pet.gender
+        age.innerText = pet.age
+        image = pet.image
+console.log(pet)
+    cardContainer.append(name, breed, gender, age, image, flipCardBack, flipCardFront)
+    // cardContainer.append(image)
+    // cardContainer.append(flipCardBack, flipCardFront)
+})
+ body.appendChild(cardContainer)
+}
 
 fetch('http://localhost:3000/pets')
 .then(response => response.json())
-.then(pets =>
-    pets.forEach(pet => {
-        let flipCardInner = document.createElement('div')
-        document.querySelector(".flipCardInner")
+.then(pets => createCard(pets))
+    // pets.forEach(pet => {
+    //     let flipCardInner = document.createElement('div')
+    //     document.querySelector(".flipCardInner")
         
-        let flipCardFront = document.createElement('div')
-        document.querySelector(".flipCardFront")
+    //     let flipCardFront = document.createElement('div')
+    //     document.querySelector(".flipCardFront")
         
-        let image = document.createElement("img")
-        image.src = pet.image
+    //     let image = document.createElement("img")
+    //     image.src = pet.image
         
-        let flipCardBack = document.createElement('div')
-        document.querySelector(".flipCardBack")
+    //     let flipCardBack = document.createElement('div')
+    //     document.querySelector(".flipCardBack")
         
-        let name = document.createElement('p')
-        name.innerText = ('Name:' + pet.name)
+    //     let name = document.createElement('p')
+    //     name.innerText = ('Name:' + pet.name)
         
-        let gender = document.createElement('p')
-        gender.innerText = ('Gender:' + pet.gender)
+    //     let gender = document.createElement('p')
+    //     gender.innerText = ('Gender:' + pet.gender)
         
-        let age = document.createElement('p')
-        age.innerText = ('Age:' + pet.age)
+    //     let age = document.createElement('p')
+    //     age.innerText = ('Age:' + pet.age)
 
-        let breed = document.createElement('p')
-        breed.innerText = ('Breed:' + pet.breed)
+    //     let breed = document.createElement('p')
+    //     breed.innerText = ('Breed:' + pet.breed)
     
-        let flipCard = document.createElement('div')
-        document.querySelector(".flipCard")
+    //     let flipCard = document.createElement('div')
+    //     document.querySelector(".flipCard")
 
-        flipCardBack.append(name, gender, age, breed)
-        flipCardInner.append(flipCardFront, flipCardBack)
-        flipCard.append(flipCardInner)
+    //     flipCardBack.append(name, gender, age, breed)
+    //     flipCardInner.append(flipCardFront, flipCardBack)
+    //     flipCard.append(flipCardInner)
 
-        body.append(flipCard)
-    })
-);
+    //     body.append(flipCard)
+//     })
+// );
 
 
 // fetch('http://localhost:3000/pets')
