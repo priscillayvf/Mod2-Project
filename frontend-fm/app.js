@@ -24,11 +24,11 @@ function createCard(pets) {
     pets.forEach(pet => {
     
 
-        let cardContainer = document.createElement('div')
+        
         let flipCardBack = document.createElement('div')
         let flipCardFront = document.createElement('div')
         let flipCardInner = document.createElement('div')
-        let flipCard = document.createElement('div')
+        
         
         flipCardFront.className = 'flipCardFront'
         flipCardBack.className = "flipCardBack"
@@ -44,17 +44,17 @@ function createCard(pets) {
         breed.innerText = pet.breed
         gender.innerText = pet.gender
         age.innerText = pet.age
-        image = pet.image
+        image.src = pet.image
 console.log(pet)
     
     flipCardFront.append(image)
     flipCardBack.append(name, breed, gender, age)
     flipCardInner.append(flipCardBack, flipCardFront)    
     flipCard.append(flipCardInner)
-    cardContainer.append(flipCard)
+    
     // cardContainer.append(image)
     // cardContainer.append(flipCardBack, flipCardFront)
-body.appendChild(cardContainer)
+
 })
  
 }
@@ -84,7 +84,6 @@ fetch('http://localhost:3000/pets')
     //     let age = document.createElement('p')
     //     age.innerText = ('Age:' + pet.age)
 
-<<<<<<< HEAD
     //     let breed = document.createElement('p')
     //     breed.innerText = ('Breed:' + pet.breed)
     
@@ -99,32 +98,6 @@ fetch('http://localhost:3000/pets')
 //     })
 // );
 
-
-// fetch('http://localhost:3000/pets')
-//     .then(response => response.json())
-//     .then(pets => {
-//        pets.forEach(pet => {
-//             <div class="flipCard" id='flipCard'>
-//                 <div class="flipCardInner" id='flipCardInner'>
-//                     <div class="flipCardFront" id='flipCardFront'>
-//                         <img src=`${pet.image}` alt="Avatar" style="width:400px;height:300px;">
-//                     </div>
-//                         <div class="flipCardBack" id='flipCardBack'>
-//                             <h1 id='name'>${pet.name}</h1>
-//                             <p id='breed'>${pet.breed}</p>
-//                             <p id='gender'>${pet.gender}</p>
-//                             <p id='age'>${pet.age}</p>
-//                         </div>
-//                 </div>
-//             </div>
-//         body.append(flipCard, flipCardInner, flipCardFront, flipCardBack)
-//         })
-//     })
-=======
-        div.append(h2, h3, p)
-        body.appendChild(div)
-        })
-    })
 
 function myFunction1() {
     // Declare variables
@@ -145,33 +118,3 @@ function myFunction1() {
       }
     }
   }
-
-
-
-function createCards(pets){
-    pets.forEach(pet => {
-        let div = document.createElement('div')
-        let name = document.createElement('h2')
-        // let species = document.createElement('p')
-        let breed = document.createElement('p')
-        let gender = document.createElement('h3')
-        let age = document.createElement('h3')
-
-        name.innerText = pet.name
-        breed.innerText = pet.breed
-        gender.innerText = `${pet.gender}`
-        age.innerText = `${pet.age}`
-
-        div.append(name, breed, gender, age)
-        body.appendChild(div)
-
-    })
-
-}
-
-
-fetch('http://localhost:3000/pets')
-    .then(response => response.json())
-    .then(createCards)
-
->>>>>>> 16a63d2f50b6fdd5851fa1018f7bc182a96f48ac
