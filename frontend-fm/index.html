@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <img src="http://r70.cooltext.com/rendered/cooltext337454301628461.png" alt="avatar"></img>
         <p>Pet Adoption App</p>
-    </div>
+    </header>
     
     <div id="flipCard"></div>
 
- 
 
-    <header>fetch</header>
 
         <div class='forms'> 
             <form>
                 <label for='Species'> Species </label>
-                <select name='Species' id='selectTag'>
-                    <option value="cat"> Cat </option>
-                    <option value="dog"> Dog </option>
+                <select name='Species' id='species'>
+                    <option value="choose"> Choose One </option>                    
+                    <option value="Cat"> Cat </option>
+                    <option value="Dog"> Dog </option>
                 </select>
-            </form>
 
 
-            <div class='Cat breeds'>
+
+            <!-- <div class='Cat breeds'>
                 <input type="text" id="myInput" onkeyup="myFunction1()" placeholder="Breed names..">
 
                 <ul id="myUL">
@@ -41,27 +40,30 @@
                 <li><a href='http://localhost:3001'>Calico</a></li>
                 <li><a href='http://localhost:3001'>Persian</a></li>
                 </ul>
-            </div>
+            </div> -->
 
-            <form>
+
                 <label for='Age'> Age </label>
-                <select name='Age' id='selectTag'>
+                <select name='Age' id='age'>
+                    <option value="age"> Select Age </option>  
                     <option value="young>"> < 4 </option>
                     <option value="adult"> 4 to 7 </option>
                     <option value="senior"> 8 < </option>
                 </select>
-            </form>
 
-            <form>
+
+
                 <label for='Gender'> Gender </label>
-                <select name='Gender' id='selectTag'>
+                <select name='Gender' id='gender'>
+                    <option value="choose"> Choose Gender </option>  
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
+                <input type='submit' id="submit" value='Fetch!'/>
             </form>
         </div>
         
-        <input type='submit' value='Fetch!'/>
+
     
 
     <script src="app.js"></script>
