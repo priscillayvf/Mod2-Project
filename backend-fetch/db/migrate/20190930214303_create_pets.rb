@@ -6,7 +6,6 @@ class CreatePets < ActiveRecord::Migration[6.0]
       t.string :breed
       t.string :gender
       t.integer :age
-      t.binary :image
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
