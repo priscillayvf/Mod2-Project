@@ -1,27 +1,103 @@
 const body = document.body
 const selectTag = document.querySelector('#selectTag')
 
+// fetch("https://localhost:3000/pets")
+//     .then(response => response.json())
+//     .then(response => console.log(response))
 
+// fetch('https://localhost:3001/pets')
+//     .then(response => response.json())
+//     .then(animals => {
+//         animals.forEach(animal => {
+//             let div = document.createElement('div')
+//             let type = document.createElement('p')
+
+//             type.innerText = `${animal.species}`
+
+//             div.append(type)
+//             body.append(div)
+//         })
+//     })
+
+function createCard(pets) {
+    let flipCard = document.querySelector('#flipCard')
+    pets.forEach(pet => {
+    
+
+        
+        let flipCardBack = document.createElement('div')
+        let flipCardFront = document.createElement('div')
+        let flipCardInner = document.createElement('div')
+        
+        
+        flipCardFront.className = 'flipCardFront'
+        flipCardBack.className = "flipCardBack"
+        flipCardInner.className = 'flipCardInner'
+        
+        let name = document.createElement('h1')
+        let breed = document.createElement('p')
+        let gender = document.createElement('p')
+        let age = document.createElement('p')
+        let image = document.createElement('img')
+        
+        name.innerText = pet.name
+        breed.innerText = pet.breed
+        gender.innerText = pet.gender
+        age.innerText = pet.age
+        image.src = pet.image
+console.log(pet)
+    
+    flipCardFront.append(image)
+    flipCardBack.append(name, breed, gender, age)
+    flipCardInner.append(flipCardBack, flipCardFront)    
+    flipCard.append(flipCardInner)
+    
+    // cardContainer.append(image)
+    // cardContainer.append(flipCardBack, flipCardFront)
+
+})
+ 
+}
 
 fetch('http://localhost:3000/pets')
-    .then(response => response.json())
-    .then(pets => {
+.then(response => response.json())
+.then(pets => createCard(pets))
+    // pets.forEach(pet => {
+    //     let flipCardInner = document.createElement('div')
+    //     document.querySelector(".flipCardInner")
         
-        pets.forEach(pet => {
-            let div = document.createElement('div')
-            let h2 = document.createElement('h2')
-            let h3 = document.createElement('h3')
-            let p = document.createElement('p')
+    //     let flipCardFront = document.createElement('div')
+    //     document.querySelector(".flipCardFront")
         
-            h2.innerText = pet.name
-            h3.innerText = pet.breed
-            p.innerText = pet.gender
+    //     let image = document.createElement("img")
+    //     image.src = pet.image
         
+    //     let flipCardBack = document.createElement('div')
+    //     document.querySelector(".flipCardBack")
+        
+    //     let name = document.createElement('p')
+    //     name.innerText = ('Name:' + pet.name)
+        
+    //     let gender = document.createElement('p')
+    //     gender.innerText = ('Gender:' + pet.gender)
+        
+    //     let age = document.createElement('p')
+    //     age.innerText = ('Age:' + pet.age)
 
-        div.append(h2, h3, p)
-        body.appendChild(div)
-        })
-    })
+    //     let breed = document.createElement('p')
+    //     breed.innerText = ('Breed:' + pet.breed)
+    
+    //     let flipCard = document.createElement('div')
+    //     document.querySelector(".flipCard")
+
+    //     flipCardBack.append(name, gender, age, breed)
+    //     flipCardInner.append(flipCardFront, flipCardBack)
+    //     flipCard.append(flipCardInner)
+
+    //     body.append(flipCard)
+//     })
+// );
+
 
 function myFunction1() {
     // Declare variables
@@ -42,32 +118,3 @@ function myFunction1() {
       }
     }
   }
-
-
-
-function createCards(pets){
-    pets.forEach(pet => {
-        let div = document.createElement('div')
-        let name = document.createElement('h2')
-        // let species = document.createElement('p')
-        let breed = document.createElement('p')
-        let gender = document.createElement('h3')
-        let age = document.createElement('h3')
-
-        name.innerText = pet.name
-        breed.innerText = pet.breed
-        gender.innerText = `${pet.gender}`
-        age.innerText = `${pet.age}`
-
-        div.append(name, breed, gender, age)
-        body.appendChild(div)
-
-    })
-
-}
-
-
-fetch('http://localhost:3000/pets')
-    .then(response => response.json())
-    .then(createCards)
-
