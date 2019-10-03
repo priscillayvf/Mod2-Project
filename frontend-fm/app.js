@@ -25,9 +25,13 @@ function createCard(pets) {
 
         let cardContainer = document.createElement('div')
         let flipCardBack = document.createElement('div')
-        flipCardBack.className = "flipCardBack"
         let flipCardFront = document.createElement('div')
+        let flipCardInner = document.createElement('div')
+        let flipCard = document.createElement('div')
+        
         flipCardFront.className = 'flipCardFront'
+        flipCardBack.className = "flipCardBack"
+        flipCardInner.className = 'flipCardInner'
         
         let name = document.createElement('h1')
         let breed = document.createElement('p')
@@ -41,11 +45,17 @@ function createCard(pets) {
         age.innerText = pet.age
         image = pet.image
 console.log(pet)
-    cardContainer.append(name, breed, gender, age, image, flipCardBack, flipCardFront)
+    
+    flipCardFront.append(image)
+    flipCardBack.append(name, breed, gender, age)
+    flipCardInner.append(flipCardBack, flipCardFront)    
+    flipCard.append(flipCardInner)
+    cardContainer.append(flipCard)
     // cardContainer.append(image)
     // cardContainer.append(flipCardBack, flipCardFront)
+body.appendChild(cardContainer)
 })
- body.appendChild(cardContainer)
+ 
 }
 
 fetch('http://localhost:3000/pets')
