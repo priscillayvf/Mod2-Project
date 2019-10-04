@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
 body {
@@ -93,12 +93,40 @@ body {
   /* align-items: flex-start; */
 }
 
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  border-radius: 5px;
+  margin: 0 -100px 0 0;
+  font-weight: bold;
+  background-color: rgba(5, 5, 5, 0.37);
+  color: white;
 
-label > forms {
-  font-family: 'Mansalva', cursive;
+}
+
+select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  background-color: rgba(255, 246, 246, 0.527);
+  color: rgb(51, 51, 51);
+  /* margin: 10px 0; */
 
 }
 
 
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: rgba(5, 5, 5, 0.37);
+  color: white;
+  /* margin: 10px 0 10px 10px; */
+}
+
+form.forms {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px 0px 20px;
+}
 
 
